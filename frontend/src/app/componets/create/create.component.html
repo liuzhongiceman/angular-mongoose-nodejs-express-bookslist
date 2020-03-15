@@ -1,0 +1,42 @@
+<mat-card>
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="title"
+        ngModel
+        required
+        minlength="3"
+        placeholder="book title"
+        #title="ngModel">
+    </mat-form-field>
+    <mat-form-field>
+      <input
+        matInput
+        type="number"
+        name="price"
+        ngModel
+        required
+        minlength="3"
+        placeholder="price"
+        #title="ngModel">
+    </mat-form-field>   
+    
+    <mat-form-field>
+      <input
+        matInput
+        type="text"
+        name="author"
+        ngModel
+        required
+        minlength="3"
+        placeholder="author"
+        #title="ngModel">
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      type="submit">Save Post</button>
+  </form>
+</mat-card>
